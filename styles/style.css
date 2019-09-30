@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');
+
+body {
+  height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.nav-item a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+.nav-item .brand {
+  color: black;
+}
+
+.nav-item .github {
+  color: grey;
+  font-weight: 300;
+}
+
+.main {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main .heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.7em;
+  padding: 40px 20px;
+}
+
+.main .window {
+  padding: 1em 0em;
+}
+
+.download {
+  padding-top: 2em;
+}
+
+.download-btn {
+  display: inline-block;
+  background-image: linear-gradient(to right, #ff512f 0%, #dd2476);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0.2em;
+  box-shadow: -15px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn:hover {
+  background-position: right center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 4em 1em 1em 1em;
+  color: #4f4f4f;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
+.window .thumb {
+  position: relative;
+  height: 380px;
+}
+
+.window .thumb img {
+  position: absolute;
+  display: block;
+  transition: all 0.8s;
+  box-shadow: -15px 15px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.window .thumb .img-1 {
+  top: 40px;
+  left: -280px;
+}
+
+.window .thumb .img-2 {
+  top: 0px;
+  right: -280px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .main .heading {
+    padding: 0px 20px;
+  }
+
+  .window .thumb {
+    height: 280px;
+  }
+
+  .window .thumb img {
+    width: 200px;
+  }
+
+  .window .thumb .img-1 {
+    top: 60px;
+    left: -150px;
+  }
+
+  .window .thumb .img-2 {
+    top: 0px;
+    right: -150px;
+  }
+}
